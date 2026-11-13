@@ -1,4 +1,4 @@
-// make.fun competition: news-image-01 — emits the day's news poster (entry.png)
+// Competition: news-image-01 (make.fun) — 13 November 2026 news poster
 import { mkdirSync, readFileSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
 
