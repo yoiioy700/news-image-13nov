@@ -1,6 +1,6 @@
 /**
  * Competition: news-image-01 (make.fun)
- * Entry generator for the 13 November 2026 news poster challenge.
+ * Entry generator for the 13 November 2026 hero-illustration poster.
  * Copies ./entry.png into MAKEFUN_OUTPUT_DIR (defaults to /output).
  */
 import { mkdirSync, readFileSync, writeFileSync } from "node:fs";
