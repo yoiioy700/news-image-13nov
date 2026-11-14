@@ -1,9 +1,14 @@
-// Competition: news-image-01 (make.fun) — 13 November 2026 news poster
+/**
+ * Competition: news-image-01 (make.fun)
+ * Entry generator for the 13 November 2026 news poster challenge.
+ * Copies ./entry.png into MAKEFUN_OUTPUT_DIR (defaults to /output).
+ */
 import { mkdirSync, readFileSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
 
 const outDir = process.env.MAKEFUN_OUTPUT_DIR || "/output";
 mkdirSync(outDir, { recursive: true });
 const data = readFileSync("./entry.png");
-writeFileSync(join(outDir, "entry.png"), data);
-console.log(`news-image-01: wrote ${data.byteLength} bytes`);
+const outPath = join(outDir, "entry.png");
+writeFileSync(outPath, data);
+console.log(`news-image-01: wrote ${data.byteLength} bytes to ${outPath}`);
